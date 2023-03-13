@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .padd-15{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .header {
+            height: 150px;
+            background-color: #2738A4;
+        }
+
+        .header img {
+            margin-top: -30px;
+            width: 90%;
+            max-width: 230px
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .main {
+            min-height: 700px;
+            background-color: black;
+        }
+
+
+        .box{
+            width: 100%;
+            max-width: 650px;
+            height: auto;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color:white;
+            border-radius: 10px;
+            margin-top: 140px;
+
+
+        }
+
+        .box h1 {
+            margin-left: 80px;
+            font-size: 24px;
+            margin-bottom: 10px;
+            margin-top: 80px;
+
+        }
+
+        .box p {
+            margin-top: 20px;
+            margin-left: 30px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            font-size: 22px;
+
+        }
+
+        .box button {
+            margin-left: 250px;
+            background-color: black;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+
+        }
+
+        .box button:hover {
+            background-color: red;
+        }
+
+        .next h1{
+            text-align: center;
+            margin-top: 30px;
+        }
+        .next img{
+            width:150px;
+            height:150px;
+            margin-top: 100px;
+            margin-left: 350px;
+
+        }
+        .next p{
+            font-size: 20px;
+            margin-top: 70px;
+            text-align: center;
+
+        }
+        .r{
+            display: flex;
+            flex-wrap: wrap;
+            right: 100px;
+            position: relative;
+            margin-bottom: 100px;
+            text-align: center;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #083ff3;
+            color: #555;
+            font-size: 14px;
+        }
+
+        footer .container2 {
+            max-width: 1140px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+        .container2 .rows{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .col{
+            min-width: 250px;
+            color:#f2f2f2f2;
+            font-family: monofonto;
+            padding:0 2rem;
+        }
+        .col .logo{
+            width: 200px;
+            margin-bottom:25px;
+        }
+        .col h3{
+            color:white;
+            margin-bottom: 20px;
+            position: relative;
+            cursor: pointer;
+        }
+        .col img{
+            margin-bottom: -40px;
+        }
+        .col h3::after{
+            content: '';
+            height:5px;
+            width:0px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left:0;
+            transition: 0.3s ease;
+
+        }
+        .col h3:hover::after{
+            width:30px
+        }
+        .col .social a i{
+            color:white;
+            margin-top:2rem;
+            margin-right: 5px;
+            transition: 0.3s ease;
+            font-size: 40px;
+        }
+        .col .social a i:hover{
+            transform: scale(1.5);
+            filter:grayscale(50);
+        }
+        .col .links a{
+            display: block;
+            text-decoration: none;
+            color:#f2f2f2;
+            margin-bottom: 5px;
+            position: relative;
+            transition: 0.3s ease;
+        }
+        .col .links a::before{
+            content:'';
+            height: 16px;
+            width:3px;
+            position: absolute;
+            top:5px;
+            left:-10px;
+            background-color: black;
+            transition: 0.5s ease;
+            opacity: 0;
+        }
+        .col .links a:hover::before{
+            opacity: 1;
+        }
+        .col .links a:hover{
+            transform: translateX(-8px);
+            color:black;
+        }
+        .col .contact-details{
+            display: inline-flex;
+            justify-content: space-between;
+        }
+        .col .contact-details i{
+            margin-right:15px;
+        }
+
+
+    @media screen and (min-width: 1600px){
+        .r{
+            left: 400px;
+            max-width: 2000px;
+
+        }
+
+        .r p{
+            text-align: right;
+        }
+
+
+        .r img{
+            display: flex;
+
+        }
+
+    }
+
+   @media screen and (min-width: 990px) {
+
+
+
+   }
+
+    </style>
+</head>
+<div class="container">
+
+    <div class="header padd-15">
+        <center>
+            <img src="Legacy_Bank.png">
+        </center>
+    </div>
+
+    <div class="main padd-15">
+        <div class="box">
+            <h1>TRAVEL PROMOTIONS</h1>
+            <p>Legacy Bank offers unique and exceptional travel experiences to their customers through exclusive travel packages to some of the most famous countries in the world. They have partnered with renowned travel agencies to provide the best deals on flights, hotels, and tours, ensuring a stress-free and enjoyable travel experience. Legacy Bank also provides travel loans with competitive interest rates and flexible repayment terms to help finance their customer's dream vacations.
+            </p>
+            <button>Learn More</button>
+        </div>
+
+
+    </div>
+    <div class="next  padd-15">
+        <h1>So why wait?</h1>
+        <div class="r padd-15">
+
+            <div class="img"><img src="SaveB.png">
+              <p>Flexible repayment terms up to 60 months.</p>
+            </div>
+
+            <div class="img"><img src="rate.png">
+                <p>Profit rates starting from 2.25%.</p>
+            </div>
+            <div class="img"><img src="papermoney.png">
+                <p>​Finance amount upto AED 1 Million.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="next2 padd-15">
+
+
+    </div>
+
+    <footer>
+        <div class="container2 padd-15">
+            <div class="rows  padd-15">
+                <div class="col padd-15" id="about"  >
+                    <img src="Legacy_Bank.png" width="200px" height="200px" id="logo">
+                    <p>Legacy Bank is renowned for its commitment to providing a safe and secure banking experience to its customers. With state-of-the-art security systems, advanced encryption technology, and strict adherence to regulatory guidelines, Legacy Bank ensures that every transaction is safe and secure. </p>
+
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="col" id="links" >
+                    <h3>Links</h3>
+                    <div class="links">
+                        <a href="#">About</a>
+                        <a href="#">Services</a>
+                        <a href="#">Our Policy</a>
+                        <a href="#">Help</a>
+                    </div>
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.164624506729!2d55.49228731517304!3d25.26504698386478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ef5f557782004f9%3A0x6516398b61164c41!2s1020avenue!5e0!3m2!1sen!2sae!4v1675333136811!5m2!1sen!2sae" width="900" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="col padd-15"id="contact">
+                    <h3>Contact</h3>
+                    <div class="contact-details">
+                        <i class="fa fa-location"></i>
+                        <p>Jumeirah Beach Residence, <br> Dubai, UAE</p>
+                    </div>
+                    <br><br>
+                    <div class="contact-details">
+                        <i class="fa fa-phone"></i>
+                        <p>0421234</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    </body>
+</html>
